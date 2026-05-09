@@ -3,15 +3,15 @@
 /* -------------------------------------- */
 
 :root {
-  --yellow: #FFF4C2;
-  --blue: #DDEAF7;
-  --red: #F7D4D4;
+  --yellow: #FFF7C8;
+  --blue: #E6F0FF;
+  --red: #FFE1E1;
 
-  --text: #3B2F2F;
-  --bg: #FAF7F3;
-  --white: #FFFFFF;
+  --text: #2F2A28;
+  --bg: #FFFFFF;
+  --soft-bg: #FAFAFA;
 
-  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+  --shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
 body {
@@ -19,7 +19,7 @@ body {
   font-family: 'Lora', serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 /* -------------------------------------- */
@@ -27,8 +27,8 @@ body {
 /* -------------------------------------- */
 
 .nav {
-  background: var(--white);
-  border-bottom: 1px solid #e3d8cf;
+  background: var(--bg);
+  border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -52,7 +52,7 @@ body {
 }
 
 .nav-links a {
-  margin-left: 30px;
+  margin-left: 28px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   color: var(--text);
@@ -69,23 +69,24 @@ body {
 /* -------------------------------------- */
 
 .hero {
-  background-image: url("images/texture-light.png");
+  background-image: url("images/hero.jpg");
   background-size: cover;
-  background-blend-mode: soft-light;
+  background-position: center;
   padding: 180px 20px;
   text-align: center;
+  color: var(--text);
 }
 
 .hero h1 {
-  font-size: 64px;
+  font-size: 58px;
   font-weight: 300;
   margin: 0;
 }
 
 .hero p {
-  margin-top: 20px;
-  font-size: 22px;
-  color: #6a4a4a;
+  margin-top: 16px;
+  font-size: 20px;
+  color: #5a4a4a;
 }
 
 /* -------------------------------------- */
@@ -100,7 +101,7 @@ body {
   font-size: 17px;
   text-decoration: none;
   transition: 0.2s ease;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .btn-yellow { background: var(--yellow); color: var(--text); }
@@ -109,7 +110,7 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  filter: brightness(0.95);
+  filter: brightness(0.97);
 }
 
 .disabled {
@@ -122,7 +123,9 @@ body {
 /* -------------------------------------- */
 
 .section {
-  padding: 100px 20px;
+  padding: 90px 20px;
+  background: var(--soft-bg);
+  margin-bottom: 40px;
 }
 
 .section-inner {
@@ -132,9 +135,10 @@ body {
 }
 
 .intro-text {
-  max-width: 700px;
-  margin: 20px auto 60px;
-  font-size: 19px;
+  max-width: 650px;
+  margin: 16px auto 50px;
+  font-size: 18px;
+  color: #4a4442;
 }
 
 /* -------------------------------------- */
@@ -166,11 +170,11 @@ body {
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
+  gap: 32px;
 }
 
 .recipe-card {
-  background: var(--white);
+  background: var(--bg);
   border-radius: 14px;
   overflow: hidden;
   text-decoration: none;
@@ -189,13 +193,10 @@ body {
   object-fit: cover;
 }
 
-.recipe-info {
-  padding: 20px;
-}
-
-.recipe-info h3 {
+.recipe-card h3 {
+  padding: 18px;
+  font-size: 20px;
   margin: 0;
-  font-size: 22px;
   color: #A8574E;
 }
 
@@ -219,8 +220,8 @@ body {
 .over-text {
   width: 45%;
   text-align: left;
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 19px;
+  line-height: 1.75;
 }
 
 /* -------------------------------------- */
@@ -230,7 +231,7 @@ body {
 .footer {
   text-align: center;
   padding: 40px 20px;
-  background: var(--white);
-  border-top: 1px solid #e3d8cf;
+  background: var(--bg);
+  border-top: 1px solid #eee;
   color: #8a7f75;
 }
